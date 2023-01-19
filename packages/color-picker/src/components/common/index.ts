@@ -1,5 +1,6 @@
 export { default as Alpha } from "./Alpha";
 export { default as Checkboard } from "./Checkboard";
+export * from "./ColorWrap";
 export { default as ColorWrap } from "./ColorWrap";
 export { default as EditableInput } from "./EditableInput";
 export { default as Hue } from "./Hue";
