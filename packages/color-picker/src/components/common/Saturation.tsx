@@ -50,10 +50,8 @@ export default function Saturation({
   function handleMouseDown(event: React.MouseEvent) {
     handleChange(event);
 
-    if (ref.current) {
-      ref.current.addEventListener("mousemove", handleChange);
-      ref.current.addEventListener("mouseup", handleMouseUp);
-    }
+    document.addEventListener("mousemove", handleChange);
+    document.addEventListener("mouseup", handleMouseUp);
   }
 
   function handleMouseUp() {
@@ -61,10 +59,8 @@ export default function Saturation({
   }
 
   function unbindEventListeners() {
-    if (ref.current) {
-      ref.current.removeEventListener("mousemove", handleChange);
-      ref.current.removeEventListener("mouseup", handleMouseUp);
-    }
+    document.removeEventListener("mousemove", handleChange);
+    document.removeEventListener("mouseup", handleMouseUp);
   }
 
   const { color, white, black, pointer: stylePointer, circle } = style || {};
