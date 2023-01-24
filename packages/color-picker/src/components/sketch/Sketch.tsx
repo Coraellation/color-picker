@@ -58,7 +58,6 @@ export function Sketch({
         width: "100%",
         paddingBottom: "75%",
         position: "relative",
-        overflow: "hidden",
       },
       Saturation: {
         borderRadius: "3px",
