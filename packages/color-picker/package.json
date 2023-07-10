@@ -1,6 +1,6 @@
 {
   "name": "@alisowski/color-picker",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "private": false,
   "description": "React color pickers from Sketch, Photoshop, Chrome, Github, Twitter & more",
   "main": "./dist/color-picker.cjs.js",
