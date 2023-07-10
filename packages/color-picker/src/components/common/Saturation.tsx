@@ -29,10 +29,14 @@ export default function Saturation({
   });
 
   useEffect(() => {
+    pointerPositionSet({
+      saturation: hsv.s * 100,
+      brightness: hsv.v * 100
+    });
     return () => {
       unbindEventListeners();
     };
-  }, []);
+  }, [hsv]);
 
   function handleChange(
     event: React.MouseEvent | React.TouchEvent | MouseEvent
